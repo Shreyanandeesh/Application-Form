@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <h2>Student Registration Form</h2>
+
+        <form action="submit.php" method="POST" id="regForm">
+
+            <label>Full Name:</label>
+            <input type="text" name="fullname" required>
+
+            <label>Email ID:</label>
+            <input type="email" name="email" required>
+
+            <label>Phone Number:</label>
+            <input type="text" name="phone" required>
+
+            <label>Course:</label>
+            <select name="course" required>
+                <option value="">Select Course</option>
+                <option>B.E.</option>
+                <option>M.Tech</option>
+                <option>BCA</option>
+                <option>MCA</option>
+            </select>
+
+            <label>Gender:</label>
+            <select name="Gender" required>
+                <option value="">Select Gender</option>
+                <option>Female</option>
+                <option>Male</option>
+            </select>
+            
+            <label>Address:</label>
+            <textarea name="address" required></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
